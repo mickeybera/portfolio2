@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @import url("https://fonts.googleapis.com/icon?family=Material+Icons"); */
+
+/* Rope Animation */
+/* Rope Animation (Pulling Effect) */
+@keyframes pullRope {
+    0% {
+      height: 75%;
+    }
+    50% {
+      height: 90%; /* Pull the rope */
+    }
+    100% {
+      height: 75%; /* Reset to normal */
+    }
+  }
+  
+  .animate-pull {
+    animation: pullRope 1s ease-in-out forwards;
+  }
