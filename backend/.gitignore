@@ -1,0 +1,50 @@
+# Node modules
+node_modules/
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Build directories
+dist/
+build/
+
+# Dependency directories
+jspm_packages/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# npm-debug files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Coverage folder (for code coverage tools)
+coverage/
+
+# Test output
+test-output/
+
+# Editor directories and files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Temporary files
+*.swp
+*~
+
+# Docker files (if you are using Docker)
+docker-compose.override.yml
+.dockerignore

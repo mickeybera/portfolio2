@@ -1,6 +1,6 @@
 import React from 'react'
-// import { Toaster } from 'react-hot-toast';
-import toast, { Toaster } from 'react-hot-toast';
+import { Toaster } from 'react-hot-toast';
+// import toast, { Toaster } from 'react-hot-toast';
 
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar'

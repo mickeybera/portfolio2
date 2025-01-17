@@ -1,7 +1,7 @@
 import React from "react";
-import Typed from 'react-typed';
-
-const pic = "/pic.jpg"; // Access image from public folder
+import {ReactTyped} from 'react-typed';
+import pic from '../../public/pic.jpg'
+// const pic = "/pic.jpg"; // Access image from public folder
 
 function Home() {
   return (
@@ -12,7 +12,7 @@ function Home() {
           Hello! <span className="text-pink-700">I am Arpan</span>
         </h1>
         <h2 className="text-xl md:text-2xl">I am a</h2>
-        <Typed
+        <ReactTyped
           className="text-2xl md:text-3xl text-blue-500 font-semibold"
           strings={[
             "Developer",
@@ -31,12 +31,13 @@ function Home() {
 
       {/* Right: Shown first on mobile */}
       <div className="order-1 md:order-2 flex justify-center">
-        <img
-          src={pic}
-          alt="Profile"
-          className="rounded-md w-40 h-40 md:w-56 md:h-56 md:my-2 shadow-lg"
-        />
-      </div>
+  <img
+    src={pic}
+    alt="Profile"
+    className="rounded-md w-100 h-80 shadow-lg"
+  />
+</div>
+
     </div>
   );
 }

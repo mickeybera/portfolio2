@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const nodemailer = require("nodemailer");
 const dotenv = require("dotenv");
-const path=require('path');
+// const path=require('path');
 
 dotenv.config(); // Load environment variables from .env
 
@@ -43,14 +43,14 @@ app.post("/send-email", async (req, res) => {
   }
 });
 // --------------code for deployment--------------//
-if(process.env.NODE_ENV=== "production"){
-  const dirPath=path.resolve();
+// if(process.env.NODE_ENV=== "production"){
+//   const dirPath=path.resolve();
 
-  app.use(express.static("./frontend/dist"));
-  app.get("*",(req,res)=>{
-    res.sendFile(path.resolve(dirPath,"./frontend/dist","index.html"));
-  })
-}
+//   app.use(express.static("./frontend/dist"));
+//   app.get("*",(req,res)=>{
+//     res.sendFile(path.resolve(dirPath,"./frontend/dist","index.html"));
+//   })
+// }
 
 // Start server
 app.listen(PORT, () => {
