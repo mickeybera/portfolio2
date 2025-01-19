@@ -40,7 +40,7 @@ function Projects() {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300"
+            className="bg-white bg-opacity-30 dark:bg-opacity-30 backdrop-blur-lg border border-white border-opacity-40 dark:border-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300"
           >
             {/* Project Title */}
             <h2 className="text-2xl font-bold mb-2 text-pink-700 dark:text-pink-400">
