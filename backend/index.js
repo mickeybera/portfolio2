@@ -12,7 +12,7 @@ const app = express();
 // Middleware
 app.use(express.json());
 app.use(cors({
-  origin: "*", // Adjust as needed (e.g., "http://your-frontend-domain.com")
+  origin: "https://portfolio2-lemon-chi.vercel.app/", // Adjust as needed (e.g., "http://your-frontend-domain.com")
   methods: ["GET", "POST"],
   allowedHeaders: ["Content-Type"]
 }));
