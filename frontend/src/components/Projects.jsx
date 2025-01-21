@@ -5,7 +5,7 @@ const projects = [
     title: "Portfolio Website",
     description:
       "A personal portfolio website to showcase my projects and skills, built with React and Tailwind CSS.",
-    link: "#",
+    link: "https://portfolio-arpan-beras-projects.vercel.app",
   },
   {
     title: "E-commerce App",
