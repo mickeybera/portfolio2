@@ -7,12 +7,14 @@ const dotenv = require("dotenv");
 dotenv.config(); // Load environment variables from .env
 
 const PORT = process.env.PORT || 4000;
+const FRONTEND_URI=process.env.FRONTEND_URI;
 const app = express();
 
 // Middleware
 app.use(express.json());
 app.use(cors({
   origin: "https://portfolio2-lemon-chi.vercel.app/",
+  // origin: "*",
   methods: ["GET", "POST"],
   allowedHeaders: ["Content-Type"]
 }));
