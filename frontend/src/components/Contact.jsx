@@ -15,7 +15,7 @@ function Contact() {
     e.preventDefault();
     setIsSubmitting(true);
     try {
-      await axios.post("http://localhost:4001/send-email", formData);
+      await axios.post("https://portfolio-main-k24r.onrender.com/send-email", formData);
       toast.success("Your message has been sent!");
       setFormData({ name: "", email: "", message: "" });
     } catch (error) {
