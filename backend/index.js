@@ -13,10 +13,10 @@ const app = express();
 // Middleware
 app.use(express.json());
 app.use(cors({
-  origin: "https://portfolio-arpan-beras-projects.vercel.app/",
-  // origin: "*",
-  methods: ["GET", "POST"],
-  allowedHeaders: ["Content-Type"]
+  // origin: "https://portfolio-arpan-beras-projects.vercel.app/",
+  origin: "*",
+  // methods: ["GET", "POST"],
+  // allowedHeaders: ["Content-Type"]
 }));
 
 // POST route for sending emails
